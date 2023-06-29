@@ -8,13 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div>
-        <div>Increment and Decrement</div>
-        <div>
-            <button id="minusContent">-</button>
-            <div id="Content">0</div>
-            <button id="plusContent">+</button>
+    <div class ="w-[100vw] h-[100vh] flex flex-col items-center justify-center bg-[#344151] gap-10">
+        <div class="text-[#0398d4] text-[18px]">Increment And Decrement</div>
+        <div class="bg-white flex text-[25px] text-[#344151] rounded-sm gap-12 p-3 px-5">
+            <button id="minusContent" class="border-r-2 border-[#bfbfbf] pr-5" onclick="decerment()">➖</button>
+            <div id="Content" class="font-bold">0</div>
+            <button id="plusContent" class="border-l-2 border-[#bfbfbf] pl-5" onclick="increment()">➕</button>
         </div>
+        <button class="font-bold border border-[#bfbfbf] p-2 bg-white rounded-sm text-[20px] text-[#344151]" onclick="reset()">RESET</button>
     </div>
     <script src="script.js"></script>
 </body>
